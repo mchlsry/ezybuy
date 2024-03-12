@@ -1,0 +1,370 @@
+/* Add a black background color to the top navigation bar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    padding: 12px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #def0c2;
+}
+  
+  /* Style the links inside the navigation bar */
+.logo {
+    float: left;
+    padding: 14px 50px;
+}
+  
+  /* Search */
+.search {
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 555px;
+    height: 42px;
+}
+
+.navbar input[type=text] {
+    float: left;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 510px;
+}
+
+.btn-search {
+    float: left;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+  /* Sign Up & Log In */
+.top {
+    font-size: 14px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+
+.signup {
+    padding: 10px 40px;
+    color: #809c51;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.login {
+    padding: 10px 40px;
+    color: #809c51;
+    background-color: white;
+    border-radius: 10px;
+}
+
+  /* Cart */
+.cart {
+    float: right;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+  /* Change the color of links on hover */
+.signup:hover {
+    background-color: #ddd;
+    color: #809c51;
+    font-weight: bold;
+}
+
+.login:hover {
+    background-color: #ddd;
+    color: #809c51;
+    font-weight: bold;
+}
+
+.max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+
+  /* slide photo */
+.slide-photo {
+    width: 1080px;
+    height: 272px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 215px;
+}
+
+.slides {
+    width: 500%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 1s;
+}
+
+.slide img {
+    width: 1080px;
+    height: 272px;
+}
+
+.manual-nav {
+    position: absolute;
+    width: 1080px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 1px solid #aad166;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+
+.manual-btn:hover{
+    background: #aad166;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+  /* auto slide */
+.auto-nav {
+    position: absolute;
+    display: flex;
+    width: 1080px;
+    justify-content: center;
+    margin-top: 246px;
+}
+
+.auto-nav div{
+  border: 1px solid #aad166;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.auto-nav div:not(:last-child){
+  margin-right: 30px;
+}
+
+#radio1:checked ~ .auto-nav .auto-btn1{
+  background: #aad166;
+}
+
+#radio2:checked ~ .auto-nav .auto-btn2{
+  background: #aad166;
+}
+
+#radio3:checked ~ .auto-nav .auto-btn3{
+  background: #aad166;
+}
+/* end auto nav */
+
+/* feature */
+
+.feature {
+    margin-top: 15px;
+    margin-left: 115px;
+    width: 1080px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+}
+
+.ft li {
+    display: inline-table;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ft li a {
+    font-size: 16px;
+    color:black;
+    padding: 0px 37px;
+}
+
+.ft p {
+    margin-left: 37px;
+    margin-bottom: 10px;
+}
+
+/* end feature */
+
+/* category */
+.category {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 215px;
+    background-color: rgb(243, 243, 243);
+    width: 1080px;
+    border-radius: 10px;
+    display: inline-table;
+}
+
+.category h1 {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.ul-category {
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+.ul-category li {
+    display: inline-table;
+}
+
+.ul-category img {
+    margin-left: 25px;
+    width: 80px;
+    height: 80px;
+}
+
+.ul-category p {
+    margin-bottom: 10px;
+    margin-left: 25px;
+    text-align: center;
+    color: black;
+}
+  /* End Category */
+
+  /* Rekomendasi */
+.rekomendasi {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 215px;
+    margin-bottom: 80px;
+    background-color: rgb(243, 243, 243);
+    width: 1080px;
+    border-radius: 10px;
+    display: inline-table;
+}
+
+.rekomendasi h1 {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.ul-rekomendasi {
+    margin-left: 36px;
+    margin-bottom: 30px;
+}
+
+.ul-rekomendasi li {
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: white;
+    width: 180px;
+    height: 275px;
+    display: inline-table;
+}
+
+.ul-rekomendasi img {
+    width: 180px;
+    height: 180px;
+}
+
+.ul-rekomendasi p {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.ul-rekomendasi li:hover {
+    box-shadow: 0 0 15px #aad166;
+}
+
+  /* lainnya */
+.lainnya {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #aad166;
+    text-align: center;
+    margin-left: 640px;
+    margin-bottom: 80px;
+}
+
+.lainnya:hover {
+    background-color: #ddd;
+    color: #809c51;
+    font-weight: bold;
+    box-shadow: 0 0 15px #aad166;
+}
+
+
+  /* footer */
+.foot {
+    margin-top: 50px;
+}
+
+.social {
+    margin-top: 20px;
+    margin-left: 620px;
+}
+
+.social img {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.foot li {
+    display: inline-table;
+}
+
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+/* @media screen and (max-width: 800px) {
+    .navbar a, .navbar input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .navbar input[type=text] {
+      border: 1px solid #ccc;
+    }
+} */
